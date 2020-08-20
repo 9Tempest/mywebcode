@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block title %}View Page{% endblock %}
+
+    {% block content %}
+        {% for item in values %}
+            <p>Name: {{item.name}}, Email: {{item.email}} </p>
+            <p>Message: {{item.message}} </p> 
+            <br>
+        {% endfor %}
+    {% endblock %}

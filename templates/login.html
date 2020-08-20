@@ -1,0 +1,23 @@
+
+    {% extends "index.html" %}
+    {% block title %}Login Page{% endblock %}
+
+    {% block content %}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p>{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+            <body class="login" style="background-color: linear-gradient(to bottom, rgba(170, 221, 235, 1) 100%, rgba(231, 240, 245, 1) 0%);text-align: center" >
+                <div class="form" style="display: inline-block;">
+                    <form action="#" method="POST">
+                        <p>Hello! Please let me know who you are!</p>
+                        <p> <input type="text" name="nm" /> </p>
+                        <p> <input type="submit" value="submit" /> </p>
+                    </form>
+                </div>
+            </body> 
+    {% endblock %}
+

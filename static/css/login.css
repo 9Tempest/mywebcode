@@ -1,0 +1,10 @@
+
+.login .form{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.login{
+    background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
+}
